@@ -1,0 +1,19 @@
+syntax="proto3";
+package sun;
+
+option java_multiple_files = false;
+option java_package = "sun";
+option java_outer_classname = "testProto";
+
+service TestService{
+    rpc testFunction(InputParam) returns(OutputParam){}
+}
+
+message InputParam{
+    string Key = 1;
+}
+
+message OutputParam{
+    string Key = 1;
+}
+
